@@ -1,13 +1,24 @@
 # Density Learning Tutorials
 
-install the conda environment using
+To ease development, we provide a general conda environment with some of the
+packages that we will use in these tutorials, then we let the user find
+the PyTorch version that fits their machine requirements, and finally we install
+the custom packages.
 
-	conda create -f environmnet.yml
+	conda create --file environment.yml 
+	
+Besides, we recomend users to install the PyTorch version matching
+their system requirements. Check the [PyTorch](https://pytorch.org)
+webpage to find how to install PyTorch. We tested that the PyTorch LTS
+with 11.1 CUDA drivers runs OK.
 
-on other folders, clone the a3md, a3md-utils and DeepDFT repositories
-then use conda-develop to add them to path
+The tutorial packages can be installed from the source code. We recommend to follow this 
+sequence to avoid some dependencies clashes.
 
-keep in mind that a3md contains a folder with scripts whose location you
-need to specify to run some of the notebooks
+	pip install git+https://github.com/brunocuevas/a3md-utils.git
+	pip install git+https://github.com/brunocuevas/a3md.git
+	pip install git+https://github.com/brunocuevas/DeepDFT.git
+	pip install pyscf
+	
 
-
+To start the tutorials, we can just open a jupyter-lab session and open the notebooks.
