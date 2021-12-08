@@ -6,7 +6,7 @@ the PyTorch version that fits their machine requirements, and finally we install
 the custom packages.
 
 	conda create --file environment.yml 
-	
+
 Besides, we recomend users to install the PyTorch version matching
 their system requirements. Check the [PyTorch](https://pytorch.org)
 webpage to find how to install PyTorch. We tested that the PyTorch LTS
@@ -18,7 +18,6 @@ sequence to avoid some dependencies clashes.
 	pip install git+https://github.com/brunocuevas/a3md-utils.git
 	pip install git+https://github.com/brunocuevas/a3md.git
 	pip install git+https://github.com/brunocuevas/DeepDFT.git
-	pip install pyscf
-	
+	pip install pyscf == 1.7.6
 
 To start the tutorials, we can just open a jupyter-lab session and open the notebooks.
